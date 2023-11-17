@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png" />
+        <link rel="stylesheet" href="style.css" />
+
+        <title>Frontend Mentor | Product preview card component</title>
+
+        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+        <style>
+            .attribution {
+                font-size: 11px;
+                text-align: center;
+            }
+            .attribution a {
+                color: hsl(228, 45%, 44%);
+            }
+        </style>
+    </head>
+    <body class="bg-primaryCream flex flex-col px-6">
+        <div
+            class="container mx-auto max-w-[400px] mt-24 flex flex-col justify-center bg-white text-sm rounded-xl md:max-w-[600px] md:mt-56">
+            <div class="md:flex">
+                <img
+                    class="object-cover rounded-t-xl md:hidden"
+                    src="./images/image-product-mobile.jpg"
+                    alt="" />
+                <img
+                    class="hidden object-cover rounded-l-xl md:h-[500px] md:block"
+                    src="./images/image-product-desktop.jpg"
+                    alt="" />
+
+                <div class="p-6 flex flex-col gap-y-6">
+                    <div
+                        class="uppercase font-[Montserrat] text-gray-500 gap-x-4">
+                        <span>p</span>
+                        <span>e</span>
+                        <span>r</span>
+                        <span>f</span>
+                        <span>u</span>
+                        <span>m</span>
+                        <span>e</span>
+                    </div>
+                    <div
+                        class="font-bold text-4xl md:text-3xl text-neutralDarkBlue font-[Fraunces]">
+                        Gabrielle Essence Eau De Parfum
+                    </div>
+                    <p class="text-gray-500 leading-normal font-[Montserrat]">
+                        A floral, solar and voluptuous interpretation composed
+                        by Olivier Ploge, Perfumer-Creator for the House of
+                        CHANEL.
+                    </p>
+                    <div class="flex items-center gap-x-4">
+                        <div
+                            class="text-4xl text-primaryDarkCyan font-bold font-[Fraunces]">
+                            $149.99
+                        </div>
+                        <div class="text-gray-500 line-through text-[Fraunces]">
+                            $169.99
+                        </div>
+                    </div>
+                    <button
+                        class="bg-primaryDarkCyan rounded-lg flex items-center gap-x-4 justify-center py-4 hover:bg-green-950">
+                        <img class="w-5" src="./images/icon-cart.svg" alt="" />
+                        <p
+                            class="text-white font-bold text-base font-[Montserrat]">
+                            Add to Cart
+                        </p>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="attribution mt-36 md:mt-52">
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by <a href="#">Faiqzfrn</a>.
+        </div>
+    </body>
+</html>
